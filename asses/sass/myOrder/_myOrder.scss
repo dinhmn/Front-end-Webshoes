@@ -1,0 +1,204 @@
+@import "../home/color";
+.wrapper {
+    header {
+        background-color: $button;
+    }
+    .img {
+        img {
+            height: 600px;
+            object-fit: cover;
+        }
+    }
+    background-color: rgb(247, 247, 247);
+    main {
+        font-family: $font-poppin;
+        .row {
+            .filter {
+                padding-left: 0px;
+                li {
+                    text-decoration: none;
+                    margin: 20px 5px;
+                    padding: 10px 5px;
+                    text-align: left;
+                    border-radius: 3px;
+                    transition: .5s;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    background-color: white;
+                    cursor: pointer;
+                    font-family: $font-poppin;
+                    &:hover {
+                        background-color: #6A5AF9;
+                        color: white
+                    }
+                    &.account {
+                        .account-img {
+                            img {
+                                width: 50px;
+                                height: 50px;
+                                object-fit: cover;
+                                border-radius: 100rem;
+                            }
+                        }
+                    }
+                    i {
+                        padding: 0 5px;
+                        margin: 0 5px;
+                        width: 50px;
+                        text-align: center;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                    span {
+                        cursor: pointer;
+                    }
+                    &.active {
+                        background-color: #6A5AF9;
+                        color: white;
+                    }
+                }
+            }
+            .order {
+                position: relative;
+                .information,
+                .order-managerment,
+                .producted-managerment,
+                .delivery-managerment {
+                    &:first-child {
+                        form {
+                            div {
+                                opacity: 1;
+                                display: block;
+                                visibility: visible;
+                                .form-select-bir {
+                                    gap: 20px;
+                                }
+                                .form-group {
+                                    &:first-child {
+                                        gap: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    border-radius: 8px;
+                    margin: 20px 0;
+                    padding: 30px;
+                    display: none;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: .5s;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    background-color: white;
+                    h3 {
+                        margin-left: 30px;
+                        padding: 5px 3px;
+                        font-weight: bold;
+                    }
+                    form {
+                        table {
+                            width: 100%;
+                            tbody,
+                            thead {
+                                tr {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    color: rgb(255, 103, 103);
+                                    padding: 20px 0;
+                                    &:hover {
+                                        background-color: #ccc;
+                                        color: $button;
+                                    }
+                                }
+                            }
+                            tbody {
+                                border: none;
+                                tr {
+                                    margin-top: 10px;
+                                    margin-bottom: 10px;
+                                    padding: 20px 0;
+                                    color: $button;
+                                }
+                            }
+                        }
+                        .product {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &-img {
+                                width: 20%;
+                            }
+                            &-title {
+                                width: 50%;
+                            }
+                            &-add {
+                                width: 30%;
+                            }
+                        }
+                    }
+                    &.delivery-managerment {
+                        section {
+                            position: relative;
+                            border: none;
+                            opacity: 1;
+                            visibility: visible;
+                            p {
+                                width: 50px;
+                                height: 50px;
+                                border: 2px solid $button;
+                                border-radius: 100rem;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: white;
+                                position: relative;
+                                color: $button;
+                                z-index: 1;
+                                &:not(:last-child)::after {
+                                    content: "";
+                                    position: absolute;
+                                    width: 130px;
+                                    height: 3px;
+                                    top: 40%;
+                                    left: 100%;
+                                    border: 2px solid $button;
+                                    z-index: -1;
+                                }
+                                i {
+                                    font-size: 24px;
+                                    color: $button;
+                                }
+                                &.active1 {
+                                    border-color: green;
+                                    background-color: green;
+                                    i {
+                                        color: white;
+                                    }
+                                }
+                                &.run {
+                                    border-color: green;
+                                    background-color: white;
+                                    color: green;
+                                }
+                            }
+                            small {
+                                text-align: center;
+                                &.active1 {
+                                    color: green;
+                                }
+                                &.run {
+                                    color: green;
+                                }
+                            }
+                        }
+                    }
+                }
+                .active {
+                    display: block;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

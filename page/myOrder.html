@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="../asses/css/myOrder.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content-1">
+                    <div class="logo">
+                        <a href="home.html"><img src="../image/logo.png" alt=""></a>
+                    </div>
+                    <ul class="links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <!-- <li>
+                            <a href="#" class="desktop-link">Features</a>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Features</label>
+                            <ul class="gentle">
+                                <li><a href="#!">Men</a></li>
+                                <li><a href="#!">Women</a></li>
+                            </ul>
+                        </li> -->
+                        <li>
+                            <a href="products.html" class="desktop-link">Products</a>
+                            <input type="checkbox" id="show-services">
+                            <label for="show-services">Products</label>
+                            <ul>
+                                <li><a href="#">Nike</a></li>
+                                <li><a href="#">Adidas</a></li>
+                                <li><a href="#">Puma</a></li>
+                                <li><a href="#">Vans</a></li>
+                                <li><a href="#">Converse</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="li-second-last"><a href="#!" class="show-cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li class="li-last-child"><a href="register.html" class="show-account"><i class="fas fa-user"></i></a></li>
+
+                    </ul>
+                </div>
+                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Type Something to Search..." required>
+                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </nav>
+        </header>
+
+        <div class="img">
+            <img src="../image/cart.png" alt="" width="100%">
+        </div>
+
+        <main class="container mt-5 mb-5">
+            <a href="#" class="text-decoration-none text-black">Home</a> >
+            <a href="#!" class="text-decoration-none text-black">Setting</a>
+            <div class="row">
+                <ul class="filter col-lg-3">
+                    <li type="1" class="account d-flex justify-content-evenly align-items-center active">
+                        <div class="account-img">
+                            <img src="../image/cart.png" alt="" width="100%">
+                        </div>
+                        <div class="account-name">
+                            Admin
+                        </div>
+                    </li>
+                    <li type="2" class="myOrder">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <span>
+                            Order management
+                        </span>
+                    </li>
+                    <li type="3" class="producted">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Producted</span>
+                    </li>
+                    <li type="4" class="deliveried">
+                        <i class="fas fa-truck"></i>
+                        <span>
+                            Delivery progress
+                        </span>
+                    </li>
+                </ul>
+                <section class="order col-lg-9">
+                    <div type="1" class="information active">
+                        <h3>Thông tin cá nhân</h3>
+                        <form action="${base }/setting2" method="post" class="" enctype="multipart/form-data">
+                            <div class="form">
+                                <div class="form-group1">
+                                    <div class="form-group mt-3 mb-3">
+                                        <div class="form-group-first">
+                                            <label for="name" class="form-label">First Name</label>
+                                            <input type="text" id="firstName" name="firstName" class="form-control" placeholder=" " required value="${userLogined.firstName }">
+                                        </div>
+                                        <div class="form-group-second">
+                                            <label for="name" class="form-label">Last Name</label>
+                                            <input type="text" name="lastName" id="lastName" class="form-control" placeholder=" " required value="${userLogined.lastName }">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-3 mb-3">
+                                        <label for="name" class="form-label">Nation</label>
+                                        <select name="nation" id="nation" class="form-select">
+                                            <option value="Nation">Nation</option>
+                                            <option value="VietNam" selected>Việt Nam</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mt-3 mb-3">
+                                        <label for="name" class="form-label">Province/City</label>
+                                        <select name="city" id="city" class="form-select">
+                                            <option value="Province/City" selected>Province/City</option>
+                                            <c:set value="${userLogined.city }" var="province"/>
+                                            <c:if test="${not empty province }">
+                                                <option value="${province }" selected>${userLogined.city }</option>
+                                            </c:if>
+                                            <c:forEach items="${city }" var="ci">
+                                                <option value="${ci.city }">${ci.city }</option>
+                                            </c:forEach>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mt-3 mb-3">
+                                        <label for="name" class="form-label">Address</label>
+                                        <input type="text" name="address" id="address" class="form-control" placeholder=" " required value="${userLogined.address }">
+                                    </div>
+                                    <div class="form-group mt-3 mb-3">
+                                        <label for="name" class="form-label">Phone</label>
+                                        <input type="phone" id="phone" name="phone" class="form-control" placeholder=" " required value="${userLogined.phone }">
+                                    </div>
+                                    <div class="form-group mt-3 mb-3">
+                                        <label for="name" class="form-label">Email Address</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder=" " required value="${userLogined.email }">
+                                    </div>
+                                    <div class="form-group mt-3 mb-3">
+                                        <label for="name" class="form-label d-block">Birthday</label>
+                                        <div class="form-select-bir d-flex">
+                                            <select name="day" id="day" class="form-select d-inline">
+                                                <option value="Day" selected>Day</option>
+                                            </select>
+                                            <select name="month" id="month" class="form-select d-inline">
+                                                <option value="Month" selected>Month</option>
+                                            </select>
+                                            <select name="year" id="year" class="form-select d-inline">
+                                                <option value="Year" selected>Year</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group2">
+                                    <div class="form-group mb-3">
+                                        <label for="formFile" class="form-label">Avatar</label>
+                                        <input class="form-control" type="file" id="formFile" name="avatar" onchange="ImagesFileAsURL()" value="${base }/image/${userLogined.avatar}">
+                                    </div>
+                                    <div class="form-group text-center" id="loadImage">
+                                        <img alt="avatar" src="${base }/image/${userLogined.avatar}" id="showImageLoaded" class="mx-auto d-block object-fit-cover" style="border-radius: 100%;width: 200px;height: 200px;object-fit: cover;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery-method ">
+                                <div class="sale-order d-block text-center">
+                                    <button type="submit" class="btn btn-success w-25 m-auto" onclick="setting('${base}')">Save</button>
+                                </div>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                    <div type="2" class="order-managerment">
+                        <h3>Quản lí đơn hàng</h3>
+                        <form action="" method="post">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Mã đơn hàng</th>
+                                        <th>Ngày mua</th>
+                                        <th>Sản phẩm</th>
+                                        <th>Tổng tiền</th>
+                                        <th>Trạng thái đơn</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Mã đơn hàng</th>
+                                        <th>Ngày mua</th>
+                                        <th>Sản phẩm</th>
+                                        <th>Tổng tiền</th>
+                                        <th>Trạng thái đơn</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                    <div type="3" class="producted-managerment">
+                        <h3>Đã mua</h3>
+                        <form action="" method="post">
+                            <div class="product">
+                                <div class="product-img">1</div>
+                                <div class="product-title">1</div>
+                                <div class="product-add">1</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div type="4" class="delivery-managerment">
+                        <h3 class="pb-3">Đơn hàng hiện tại</h3>
+                        <section class="delivery-now mt-5">
+                            <section class="d-flex justify-content-around align-items-center pb-0">
+                                <p class="session-1 run">
+                                    <i class="fas fa-file-invoice"></i>
+                                </p>
+                                <p class="session-2 active1">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </p>
+                                <p class="session-3">
+                                    <i class="fas fa-truck-moving"></i>
+                                </p>
+                                <p class="session-4">
+                                    <i class="fas fa-download"></i>
+                                </p>
+                                <p class="session-5">
+                                    <i class="fas fa-star"></i>
+                                </p>
+                            </section>
+                            <section class="d-flex justify-content-around align-items-center mt-0 pt-0">
+                                <small class="session-1 ps-3 run">
+                                    Đã đặt
+                                </small>
+                                <small class="session-2 active ms-2 active1">
+                                    Đã xác nhận
+                                </small>
+                                <small class="session-3">
+                                    Đang lấy hàng
+                                </small>
+                                <small class="session-4 pe-1">
+                                    Đang giao
+                                </small>
+                                <small class="session-5">
+                                    Đánh giá
+                                </small>
+                            </section>
+                            <section>
+                                <form action="" method="post" style="margin-top: 30px;">
+                                    <table>
+                                        <thead>
+                                            <tr style="color: #ff626d;">
+                                                <th>#</th>
+                                                <th>Sản phẩm</th>
+                                                <th>Đơn giá</th>
+                                                <th>Tổng tiền</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <th>Sản phẩm</th>
+                                                <th>Tổng tiền</th>
+                                                <th>Trạng thái đơn</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </section>
+                        </section>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer start-->
+        <footer>
+            <section class="footer container">
+                <div class="row d-lg-flex justify-content-lg-between align-items-lg-start">
+                    <div class="information col-lg-4 col-md-4 col-sm-4">
+                        <h2>Introduction</h2>
+                        <p>
+                            Welcome to the DesStore home here, every word, every detail and every image is evidence of DesStore's history, and is constantly growing.
+                        </p>
+                    </div>
+                    <div class="address col-lg-4 col-md-4 col-sm-4">
+                        <h2>Address</h2>
+                        <a href="# ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>21 W. 46th St., New York, United States</span>
+                        </a>
+                        <a href="# ">
+                            <i class="fas fa-phone"></i>
+                            <span>0982211485</span>
+                        </a>
+                        <a href="# ">
+                            <i class="fas fa-envelope-open-text "></i>
+                            <span>ngocdinh2k1@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="social-networking col-lg-4 col-md-4 col-sm-4">
+                        <h2>Social Networking</h2>
+                        <div class="social-icons ">
+                            <a href=" " style="color: #3d55d9 "><i class="fab fa-facebook "></i></a>
+                            <a href=" " style="color: #ff626d "><i class="fab fa-instagram "></i></a>
+                            <a href=" " style="color: rgb(120, 122, 245) "><i class="fab fa-facebook-messenger "></i></a>
+                            <a href=" " style="color: #38a1d9 "><i class="fab fa-skype "></i></a>
+                            <a href=" " style="color: #6bb731 "><i class="fab fa-twitter "></i></a>
+                            <a href=" " style="color: #2f2f31 "><i class="fab fa-github "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="foot-register container">
+                <div class="foot-register-payment">
+                    <a href=" "><img src="../image/footer-1.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-2.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-3.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-4.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-5.png " alt=" "></a>
+
+                </div>
+            </section>
+        </footer>
+        <!-- Footer end -->
+    </div>
+    <script src="../asses/js/jquery.min.js"></script>
+    <script src="../asses/js/wow.js"></script>
+    <script src="../asses/js/scroll.js"></script>
+    <script src="../asses/js/myOrder.js"></script>
+</body>
+
+</html>

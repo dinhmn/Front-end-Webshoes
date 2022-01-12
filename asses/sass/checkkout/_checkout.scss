@@ -1,0 +1,243 @@
+@import '../home/color';
+body {
+    font-family: $font-poppin;
+    .wrapper {
+        .pop-up {
+            position: absolute;
+            z-index: 99;
+            background-color: rgb(235, 235, 235);
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            visibility: visible;
+            display: none;
+        }
+        .success {
+            display: none;
+            width: 30vw;
+            background-color: white;
+            position: fixed;
+            z-index: 100;
+            left: 35vw;
+            top: 40vh;
+            border-radius: 5px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            &-alert {
+                font-size: 28px;
+                text-transform: uppercase;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            &-content {
+                color: #0f5132;
+            }
+            &-button {
+                gap: 50px;
+                margin: 0 30px;
+            }
+        }
+        .make-payment-img {
+            img {
+                width: 100vw;
+                height: 500px;
+                object-fit: cover;
+            }
+        }
+        main {
+            border: 1px solid #842029;
+            margin: 20px auto;
+            .checkout {
+                padding: 20px;
+                .heading {
+                    margin-bottom: 50px;
+                }
+                &-heading {
+                    span {
+                        font-size: 16px;
+                        #intruction {
+                            color: #842029;
+                            width: fit-content;
+                            font-weight: bold;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .intruction {
+                    display: block;
+                    padding: 20px 30px;
+                    border-radius: 5px;
+                    border: 1px solid #842029;
+                    h3 {
+                        color: #842029;
+                        font-weight: bold;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 1.5;
+                    }
+                }
+                &-alert {
+                    span {
+                        font-size: 16px;
+                        span {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .login {
+                    padding: 20px;
+                    border: 1px solid rgb(73, 155, 231);
+                    border-radius: 5px;
+                    display: none;
+                    form {
+                        p {
+                            font-size: 15px;
+                            text-align: left;
+                        }
+                        .form-group {
+                            label {
+                                font-size: 16px;
+                            }
+                            input:focus {
+                                background-color: none;
+                                box-shadow: none;
+                            }
+                        }
+                        .btn-group {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            button {
+                                border-radius: 3px;
+                            }
+                        }
+                        small {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                &-form {
+                    .form {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        padding: 30px;
+                        &-group1 {
+                            width: 50%;
+                            .form-group {
+                                &:first-child {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+                                }
+                                label {
+                                    font-size: 16px;
+                                }
+                                &:last-child {
+                                    .form-select-bir {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        gap: 40px;
+                                        select {
+                                            option {
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                                }
+                                input:focus {
+                                    background-color: none;
+                                    box-shadow: none;
+                                }
+                                select {
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        &-group2 {
+                            width: 40%;
+                            .form-group {
+                                label {
+                                    font-size: 16px;
+                                }
+                                textarea {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .sale-order {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        table {
+                            thead {
+                                tr {
+                                    th {
+                                        font-size: 16px;
+                                        &:not(:last-child) {
+                                            width: 40%;
+                                            border-right: 1px solid $button;
+                                        }
+                                    }
+                                }
+                            }
+                            tbody {
+                                tr {
+                                    // &.bankTransfer {
+                                    //     display: none;
+                                    //     transition: .5s;
+                                    // }
+                                    td {
+                                        cursor: pointer;
+                                        font-size: 16px;
+                                        padding-left: 20px;
+                                        &:not(:last-child) {
+                                            border-right: 1px solid $button;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .delivery-method {
+                        .form-check-method {
+                            .form-check {
+                                .bankTransfer {
+                                    font-size: 14px;
+                                    display: none;
+                                    // position: relative;
+                                    // &::before {
+                                    //     content: "";
+                                    //     position: absolute;
+                                    //     border: 20px solid transparent;
+                                    //     border-bottom-color: #e2e3e5;
+                                    //     top: -40px;
+                                    //     left: 20px;
+                                    //     display: block;
+                                    // }
+                                    // &::after {
+                                    //     content: "";
+                                    //     position: absolute;
+                                    //     border: 22px solid transparent;
+                                    //     border-bottom-color: #d3d6d8;
+                                    //     top: -43px;
+                                    //     left: 18px;
+                                    //     z-index: -1;
+                                    //     display: block;
+                                    // }
+                                }
+                            }
+                            label {
+                                font-size: 16px;
+                            }
+                        }
+                        button {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

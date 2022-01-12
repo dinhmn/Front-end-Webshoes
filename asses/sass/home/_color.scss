@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fruktur&display=swap);
+$text: #fff;
+$bg-right: #ff626d;
+$bg-left: #fcad72;
+$button: #333235;
+$banner: #40BFFF;
+$bg-general: rgba(224, 224, 224, 0.3);
+$rate: #f8ad73;
+$z-index: #cccccc;
+$btn: #6a5af9;
+$font-poppin: 'Poppins',
+sans-serif;
+$font-fruk: 'Fruktur',
+cursive;
+$font-monter: 'Montserrat',
+Arial,
+Helvetica,
+sans-serif;
+html {
+    overflow-x: hidden;
+}
+
+ul {
+    float: left;
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@keyframes upDown {
+    50% {
+        transform: translateY(20px);
+        color: $bg-right;
+    }
+    100% {
+        color: $button;
+        transform: translateY(0);
+    }
+}
+
+.btn {
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    color: $text;
+    font-size: 16px;
+    background-color: rgb(93, 93, 255);
+}
+
+.btn-info {
+    color: $text;
+    font-size: 16px;
+    background-color: lightgreen;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: $button;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, $bg-right);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}

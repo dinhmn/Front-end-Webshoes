@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="../asses/css/checkout.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="pop-up"></div>
+        <!-- <form class="success pb-4">
+            <div class="success-alert text-center alert-success pt-2 pb-2">
+                <b>Success</b>
+            </div>
+            <div class="success-content text-center pt-4 pb-4">
+                <h4>You have made a successful purchase.</h4>
+                <small>Do you want to save the information for the next purchase?</small>
+            </div>
+            <div class="success-button d-flex justify-content-around align-items-end">
+                <button type="button" class="yes btn btn-primary w-25">Yes</button>
+                <button type="button" class="no btn btn-danger w-25">No</button>
+            </div>
+        </form> -->
+        <form class="success error pb-4">
+            <div class="success-alert text-center alert-danger pt-2 pb-2">
+                <b>Error</b>
+            </div>
+            <div class="success-content text-center pt-4 pb-4">
+                <h4>Purchase error, please try again?</h4>
+            </div>
+            <div class="success-button d-flex justify-content-around align-items-end">
+                <button type="button" class="ok btn btn-primary w-25">OK</button>
+            </div>
+        </form>
+        <!-- Header start -->
+        <header>
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content-1">
+                    <div class="logo">
+                        <a href="home.html"><img src="../image/logo.png" alt=""></a>
+                    </div>
+                    <ul class="links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="#" class="desktop-link">Features</a>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Features</label>
+                            <ul class="gentle">
+                                <li><a href="#!">Men</a></li>
+                                <li><a href="#!">Women</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html" class="desktop-link">Products</a>
+                            <input type="checkbox" id="show-services">
+                            <label for="show-services">Products</label>
+                            <ul>
+                                <li><a href="#">Nike</a></li>
+                                <li><a href="#">Adidas</a></li>
+                                <li><a href="#">Puma</a></li>
+                                <li><a href="#">Vans</a></li>
+                                <li><a href="#">Converse</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="li-second-last"><a href="#!" class="show-cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li class="li-last-child"><a href="register.html" class="show-account"><i class="fas fa-user"></i></a></li>
+
+                    </ul>
+                </div>
+                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Type Something to Search..." required>
+                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </nav>
+        </header>
+        <!-- Header end -->
+
+        <div class="make-payment-img">
+            <img src="../image/cart.png" alt="" width="100%">
+        </div>
+
+        <!-- Check out start -->
+        <main class="container">
+            <div class="checkout">
+                <div class="heading">
+                    <h1><b>Order</b></h1>
+                </div>
+                <div class="checkout-heading row alert alert-danger text-center d-flex justify-content-between align-items-center p-3">
+                    <span class="d-inline">10% discount on total order when making transfer payment. <b class="text-decoration-none d-inline" id="intruction">See the instructions!</b></span>
+                </div>
+                <div class="intruction mt-2 mb-4">
+                    <div class="header">
+                        <h3 class="mt-2 mb-2">Intructions for using priority payment offer.</h3>
+                        <p class="mt-2 p-1">
+                            <span>You shop normally, <b>note that the price on the product page is the price that has not been reduced</b>. After adding the product to the cart, you proceed to place an order.</span>
+                            <span class="d-block pt-2">On the "Order" page at the bottom, you will select "Bank transfer" and the website will automatically recalculate the reduced amount. Note that the amount of the discount does not include the shipping fee.</span>
+                            <img src="" alt="..">
+                            <p>Click “Place Order” and on the next page you will see the transfer information.</p>
+                            <img src="" alt="..">
+                            <p>Thank you for choosing <b style="color: #842029;">DesStore Sneaker!</b></p>
+                        </p>
+                    </div>
+                </div>
+                <div class="checkout-alert row alert alert-primary d-flex align-items-center">
+                    <span>
+                        </i>Do you have an account.<span class="alert-link" id="login"> Click sign in?</span>
+                    </span>
+                </div>
+                <div class="login">
+                    <form action="" method="post" class="d-flex justify-content-center align-items-center flex-column">
+                        <p class="m-3">
+                            If you have purchased from us before, please login. If you are a new customer, please continue to enter the payment information.
+                        </p>
+                        <div class="w-25">
+                            <div class="form-group col w-100">
+                                <label for="username" class="form-label">User name</label>
+                                <input type="text" id="username" name="username" class="form-control p-2" placeholder=" " required>
+                            </div>
+                            <div class="form-group col w-100">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" id="password" name="password" class="form-control p-2" placeholder=" " required>
+                            </div>
+                            <div class="btn-group mt-3 w-100">
+                                <button type="submit" c class="btn btn-primary text-right">
+                                    Login
+                                </button>
+                            </div>
+                            <small>
+                                <a href="" class="text-decoration-none text-black">
+                                    Forgot password?
+                                </a>
+                            </small>
+                        </div>
+                    </form>
+                </div>
+                <form action="" method="post" class="checkout-form row">
+                    <div class="form">
+                        <div class="form-group1">
+                            <div class="form-group mt-3 mb-3 row">
+                                <div class="form-group-first col">
+                                    <label for="name" class="form-label">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-control" placeholder=" " required>
+                                </div>
+                                <div class="form-group-second col">
+                                    <label for="name" class="form-label">Last Name</label>
+                                    <input type="text" name="lastName" id="lastName" class="form-control" placeholder=" " required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3 mb-3">
+                                <label for="name" class="form-label">Nation</label>
+                                <select name="nation" id="nation" class="form-select">
+                                    <option value="Nation" selected>Nation</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-3 mb-3">
+                                <label for="name" class="form-label">Province / City</label>
+                                <select name="city" id="city" class="form-select">
+                                    <option value="Province / City" selected>Province / City</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-3 mb-3">
+                                <label for="name" class="form-label">Address for Delivery</label>
+                                <input type="text" name="address" id="address" class="form-control" placeholder=" " required>
+                            </div>
+                            <div class="form-group mt-3 mb-3">
+                                <label for="name" class="form-label">Phone</label>
+                                <input type="phone" id="phone" name="phone" class="form-control" placeholder=" " required>
+                            </div>
+                            <div class="form-group mt-3 mb-3">
+                                <label for="name" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
+                            </div>
+                            <div class="form-group mt-3 mb-3">
+                                <label for="name" class="form-label d-block">Birthday</label>
+                                <div class="form-select-bir">
+                                    <select name="day" id="day" class="form-select d-inline">
+                                        <option value="Day" selected>Day</option>
+                                    </select>
+                                    <select name="month" id="month" class="form-select d-inline">
+                                        <option value="Month" selected>Month</option>
+                                    </select>
+                                    <select name="year" id="year" class="form-select d-inline">
+                                        <option value="Year" selected>Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group2">
+                            <div class="form-group mt-3 mb-3 row">
+                                <label for="name" class="form-label">Note order <small>(option)</small> </label>
+                                <textarea class="form-control" name="message" id="message" cols="40" rows="5" placeholder="Note"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sale-order">
+                        <table class="table table-striped table-inverse table-responsive">
+                            <thead class="thead-inverse text-center">
+                                <tr>
+                                    <th>Products</th>
+                                    <th>Provisional</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Sản phẩm 1</td>
+                                    <td>Tiền</td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row">Temporary</td>
+                                    <td>12345</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Delivery</td>
+                                    <td>
+                                        Free
+                                    </td>
+                                </tr>
+                                <tr class="bankTransfer">
+                                    <td scope="row">Temporary</td>
+                                    <td>12345</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Total</td>
+                                    <td>
+                                        12345
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="delivery-method ">
+                        <div class="form-check-method flex-column justify-content-start align-items-start mt-3 mb-3 ms-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Credit Card or Debit(COD)
+                                </label>
+                            </div>
+                            <div class="form-check" id='bankTransfer'>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Bank Transfer (-10%)
+                                </label>
+                                <div class="bankTransfer alert alert-secondary mt-3 w-75">
+                                    Make payment to our bank account. The transfer content needs to clearly state the full name, phone number and order code to confirm the correct order. Your order will be shipped once we receive your payment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-order d-block text-center">
+                            <button type="submit" class="btn btn-success w-25 m-auto">Order</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- Check out end -->
+
+        <!-- Footer start-->
+        <footer>
+            <section class="footer container">
+                <div class="row d-lg-flex justify-content-lg-between align-items-lg-start">
+                    <div class="information col-lg-4 col-md-4 col-sm-4">
+                        <h2>Introduction</h2>
+                        <p>
+                            Welcome to the DesStore home here, every word, every detail and every image is evidence of DesStore's history, and is constantly growing.
+                        </p>
+                    </div>
+                    <div class="address col-lg-4 col-md-4 col-sm-4">
+                        <h2>Address</h2>
+                        <a href="# ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>21 W. 46th St., New York, United States</span>
+                        </a>
+                        <a href="# ">
+                            <i class="fas fa-phone"></i>
+                            <span>0982211485</span>
+                        </a>
+                        <a href="# ">
+                            <i class="fas fa-envelope-open-text "></i>
+                            <span>ngocdinh2k1@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="social-networking col-lg-4 col-md-4 col-sm-4">
+                        <h2>Social Networking</h2>
+                        <div class="social-icons ">
+                            <a href=" " style="color: #3d55d9 "><i class="fab fa-facebook "></i></a>
+                            <a href=" " style="color: #ff626d "><i class="fab fa-instagram "></i></a>
+                            <a href=" " style="color: rgb(120, 122, 245) "><i class="fab fa-facebook-messenger "></i></a>
+                            <a href=" " style="color: #38a1d9 "><i class="fab fa-skype "></i></a>
+                            <a href=" " style="color: #6bb731 "><i class="fab fa-twitter "></i></a>
+                            <a href=" " style="color: #2f2f31 "><i class="fab fa-github "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="foot-register container">
+                <div class="foot-register-payment">
+                    <a href=" "><img src="../image/footer-1.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-2.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-3.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-4.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-5.png " alt=" "></a>
+
+                </div>
+            </section>
+        </footer>
+        <!-- Footer end -->
+    </div>
+    <script src="../asses/js/jquery.min.js"></script>
+    <script src="../asses/js/wow.js"></script>
+    <script src="../asses/js/scroll.js"></script>
+    <script src="../asses/js/checkout.js"></script>
+</body>
+
+</html>

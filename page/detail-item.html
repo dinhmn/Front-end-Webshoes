@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../asses/css/jquery.fancybox.css" media="screen" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../asses/css/detail.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content-1">
+                    <div class="logo">
+                        <a href="#"><img src="../image/logo.png" alt=""></a>
+                    </div>
+                    <ul class="links">
+                        <li><a href="#!">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="#" class="desktop-link">Features</a>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Features</label>
+                            <ul class="gentle">
+                                <li><a href="#!">Men</a></li>
+                                <li><a href="#!">Women</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html" class="desktop-link">Products</a>
+                            <input type="checkbox" id="show-services">
+                            <label for="show-services">Products</label>
+                            <ul>
+                                <li><a href="#">Nike</a></li>
+                                <li><a href="#">Adidas</a></li>
+                                <li><a href="#">Puma</a></li>
+                                <li><a href="#">Vans</a></li>
+                                <li><a href="#">Converse</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html" class="show-cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="register.html" class="show-account"><i class="fas fa-user"></i></a></li>
+
+                    </ul>
+                </div>
+                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Type Something to Search..." required>
+                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="product-heading">
+                <h5>
+                    <p>Home</p>
+                    <p><i class="fas fa-caret-right"></i></p>
+                    <p>Products</p>
+                    <p><i class="fas fa-caret-right"></i></p>
+                    <p class="check" id="productName">Nike Airmax 270 React</p>
+                </h5>
+            </div>
+            <section class="this-product row">
+                <div class="about-product mb-sm-3 mb-sm-3 col-lg-9 col-md-12 col-sm-12">
+                    <div class="about-image col-lg-12">
+                        <div class="about-product-image">
+                            <div class="img-display">
+                                <div class="img-showcase">
+                                    <img src="../image/Adidas/alphabounce-beyond-black.png" alt="shoe image" width="100%">
+                                    <img src="../image/Adidas/1.png" alt="shoe image" width="100%">
+                                    <img src="../image/Adidas/2.png" alt="shoe image" width="100%">
+                                    <img src="../image/Adidas/3-1.png" alt="shoe image" width="100%">
+                                </div>
+                            </div>
+                            <div class="img-select">
+                                <div class="img-item">
+                                    <a href="#" data-id="1">
+                                        <img src="../image/Adidas/alphabounce-beyond-black.png" alt="shoe image" width="100%">
+                                    </a>
+                                </div>
+                                <div class="img-item">
+                                    <a href="#" data-id="2">
+                                        <img src="../image/Adidas/1.png" alt="shoe image" width="100%">
+                                    </a>
+                                </div>
+                                <div class="img-item">
+                                    <a href="#" data-id="3">
+                                        <img src="../image/Adidas/2.png" alt="shoe image" width="100%">
+                                    </a>
+                                </div>
+                                <div class="img-item">
+                                    <a href="#" data-id="4">
+                                        <img src="../image/Adidas/3-1.png" alt="shoe image" width="100%">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-product-size mt-md-3 mt-sm-3 mb-sm-3 mb-md-3">
+                            <div class="about-name">
+                                <p>Nike Airmax 270 React</p>
+                                <div class="about-name-rate">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <span id="totalReviews">
+                                        0 reviews
+                                    </span>
+                                    <span>
+                                        <a href="">Submit a review</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="about-price">
+                                <h2>$299,43</h2>
+                                <del>$543,33</del>
+                                <span>24% Off</span>
+                            </div>
+                            <div class="about-size">
+                                <table>
+                                    <tr>
+                                        <td>Availability:</td>
+                                        <td>In stock</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Category:</td>
+                                        <td>Accessories</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Free shipping</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping Area:</td>
+                                        <td>All over the world</td>
+                                    </tr>
+                                    <tr class="selectColor">
+                                        <td>Select Color:</td>
+                                        <td>
+                                            <span style="background-color: blue"></span>
+                                            <span style="background-color: red;"></span>
+                                            <span style="background-color: black;"></span>
+                                            <span style="background-color: yellow;"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Size</td>
+                                        <td>
+                                            <select name="size" id="size">
+                                                <option value="36" >36</option>
+                                                <option value="37" >37</option>
+                                                <option value="38" >38</option>
+                                                <option value="39" >39</option>
+                                                <option value="40" >40</option>
+                                                <option value="41" selected >41</option>
+                                                <option value="42" >42</option>
+                                                <option value="43" >43</option>
+                                                <option value="44" >44</option>
+                                                <option value="45" >45</option>
+                                                <option value="46" >46</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="about-quantity">
+                                    <div class="quantity-choose">
+                                        <button id="reduce">-</button>
+                                        <input type="text" value="1" class="choose" disabled>
+                                        <button id="increase">+</button>
+                                    </div>
+                                    <div class="quantity-add">
+                                        <button class="btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>Add To Cart</span>
+                                        </button>
+                                        <button class="btn"><i class="far fa-heart"></i></button>
+                                    </div>
+                                </div>
+                                <div class="about-share">
+                                    <button class="btn btn-primary">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <span>Share on Facebook</span>
+                                    </button>
+                                    <button class="btn btn-info">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>Share on Twitter</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="about-reviews col-lg-12">
+                        <div class="menu-more">
+                            <ul>
+                                <li type="des" class="active">DESCRIPTION</li>
+                                <li type="infor">INFORMATION</li>
+                                <li type="revi">REVIEWS (<span class="reviewsQty">1</span>)</li>
+                            </ul>
+                        </div>
+                        <div class="about-reviews-content">
+                            <div class="tab-content" id="advancedTabContent">
+                                <div type="des" class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                    <!-- <h5>Product Description</h5>
+                                    <p class="small text-muted text-uppercase mb-2">Shirts</p>
+                                    <h6>12.99 $</h6>
+                                    <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam. Distinctio, officia quis dolore quos sapiente
+                                        tempore alias.</p> -->
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus dolores vel quaerat est fuga a possimus soluta! A facere distinctio adipisci accusantium corrupti eaque vero delectus molestias itaque harum. Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Placeat, temporibus numquam repellendus laboriosam, iusto libero maxime cum dicta neque incidunt ab distinctio? Dignissimos veritatis error, eum vitae autem dolore harum? Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Autem perspiciatis aliquid pariatur et praesentium at voluptate facere aliquam consequatur sunt doloribus eos eum dignissimos totam omnis perferendis, odio est minima. Lorem ipsum,
+                                        dolor sit amet consectetur adipisicing elit. Atque officiis nesciunt voluptas dolores fuga quam deserunt eaque molestias voluptate pariatur perferendis ab excepturi nisi impedit explicabo consequatur, nulla labore
+                                        ipsam!
+                                    </p>
+                                </div>
+                                <div type="infor" class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
+                                    <h5>Additional Information</h5>
+                                    <table class="table table-striped table-bordered mt-3">
+                                        <thead>
+                                            <tr>
+                                                <th scope="row" class="w-150 dark-grey-text h6">Size</th>
+                                                <td><em>41</em></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="w-150 dark-grey-text h6">Dimensions</th>
+                                                <td><em>50 × 60 cm</em></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="w-150 dark-grey-text h6">Color</th>
+                                                <td><em>White</em></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div type="revi" class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                                    <h5><span>1</span> review for <span>Fantasy T-shirt</span></h5>
+                                    <div class="media mt-3">
+                                        <img src="https://mdbootstrap.com/img/Photos/Others/placeholder1.jpg" width="62" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <div class="d-sm-flex d-lg-flex justify-content-between">
+                                                <p class="mt-1 mb-2">
+                                                    <strong>Marthasteward </strong>
+                                                    <span>– </span><span>January 28, 2020</span>
+                                                </p>
+                                                <ul class="rating mb-sm-0">
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-primary"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-primary"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-primary"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star fa-sm text-primary"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="far fa-star fa-sm text-primary"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="mb-0">Nice one, love it!</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h5 class="mt-4">Add a review</h5>
+                                    <p>Your email address will not be published.</p>
+                                    <div class="rating mb-0">
+                                        <ul class="rating mb-3">
+                                            <li>
+                                                <a href="#!">
+                                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    <i class="fas fa-star fa-sm text-primary"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="reviews">
+                                        <!-- Your review -->
+                                        <div class="md-form">
+                                            <textarea id="form76" name="reviews" class="md-textarea form-control pr-6" rows="4" placeholder="Your review"></textarea>
+                                        </div>
+                                        <!-- Name -->
+                                        <div class="md-form">
+                                            <input type="text" name="name" id="form75" class="form-control pr-6" placeholder="Name">
+                                            <small></small>
+                                        </div>
+                                        <!-- Email -->
+                                        <div class="md-form">
+                                            <input type="email" name="email" id="form77" class="form-control pr-6" placeholder="Email">
+                                            <small></small>
+                                        </div>
+                                        <div class="text-right pb-2 d-flex justify-content-end align-items-end">
+                                            <button type="submit" class="btn btn-primary">Add a review</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+                <div class="about-seller col-lg-3 col-md-12 col-sm-12">
+                    <div class="about-seller-img">
+                        <h3>BEST SELLER</h3>
+                        <div class="sale-img">
+                            <img src="../image/product-8.png" alt="" width="100%">
+                        </div>
+                        <div class="sale-rate">
+                            <p class="sale-rate-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p>
+                                <span>$499</span>
+                                <del>$599</del>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="related-products container">
+                <div class="related-products-content">
+                    <h1>
+                        Other Products
+                    </h1>
+                </div>
+                <div class="related rows">
+                    <div class="about-seller mx-auto">
+                        <div class="about-seller-img">
+                            <div class="sale-img">
+                                <img src="../image/detail-shoe2.png" alt="" width="100%">
+                            </div>
+                            <div class="sale-rate">
+                                <p class="sale-rate-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p>
+                                    <span>$499</span>
+                                    <del>$599</del>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-seller mx-auto">
+                        <div class="about-seller-img">
+                            <div class="sale-img">
+                                <img src="../image/detail-shoe8.png" alt="" width="100%">
+                            </div>
+                            <div class="sale-rate">
+                                <p class="sale-rate-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p>
+                                    <span>$499</span>
+                                    <del>$599</del>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-seller mx-auto">
+                        <div class="about-seller-img">
+                            <div class="sale-img">
+                                <img src="../image/detail-shoe5.png" alt="" width="100%">
+                            </div>
+                            <div class="sale-rate">
+                                <p class="sale-rate-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p>
+                                    <span>$499</span>
+                                    <del>$599</del>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-seller mx-auto">
+                        <div class="about-seller-img">
+                            <div class="sale-img">
+                                <img src="../image/detail-shoe7.png" alt="" width="100%">
+                            </div>
+                            <div class="sale-rate">
+                                <p class="sale-rate-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p>
+                                    <span>$499</span>
+                                    <del>$599</del>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer>
+            <section class="footer container">
+                <div class="row d-lg-flex justify-content-lg-between align-items-lg-start">
+                    <div class="information col-lg-4 col-md-4 col-sm-4">
+                        <h2>Introduction</h2>
+                        <p>
+                            Welcome to the DesStore home here, every word, every detail and every image is evidence of DesStore's history, and is constantly growing.
+                        </p>
+                    </div>
+                    <div class="address col-lg-4 col-md-4 col-sm-4">
+                        <h2>Address</h2>
+                        <a href="# ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>21 W. 46th St., New York, United States</span>
+                        </a>
+                        <a href="# ">
+                            <i class="fas fa-phone"></i>
+                            <span>0982211485</span>
+                        </a>
+                        <a href="# ">
+                            <i class="fas fa-envelope-open-text "></i>
+                            <span>ngocdinh2k1@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="social-networking col-lg-4 col-md-4 col-sm-4">
+                        <h2>Social Networking</h2>
+                        <div class="social-icons ">
+                            <a href=" " style="color: #3d55d9 "><i class="fab fa-facebook "></i></a>
+                            <a href=" " style="color: #ff626d "><i class="fab fa-instagram "></i></a>
+                            <a href=" " style="color: rgb(120, 122, 245) "><i class="fab fa-facebook-messenger "></i></a>
+                            <a href=" " style="color: #38a1d9 "><i class="fab fa-skype "></i></a>
+                            <a href=" " style="color: #6bb731 "><i class="fab fa-twitter "></i></a>
+                            <a href=" " style="color: #2f2f31 "><i class="fab fa-github "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="foot-register container">
+                <div class="foot-register-payment">
+                    <a href=" "><img src="../image/footer-1.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-2.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-3.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-4.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-5.png " alt=" "></a>
+
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="../asses/js/jquery.min.js"></script>
+    <script src="../asses/js/wow.js"></script>
+    <script src="../asses/js/detail.js"></script>
+
+</body>
+
+</html>

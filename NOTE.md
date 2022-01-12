@@ -1,0 +1,1 @@
+- Trang Web vẫn chưa kịp hoàn thành mọi thứ như responsive vài trang,

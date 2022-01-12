@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesStore</title>
+    <link rel="icon" href="../image/logo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../asses/css/main.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navigation start-->
+        <header>
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content-1">
+                    <div class="logo">
+                        <a href="#"><img src="../image/logo.png" alt=""></a>
+                    </div>
+                    <ul class="links">
+                        <li><a href="#!">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="#" class="desktop-link">Features</a>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Features</label>
+                            <ul class="gentle">
+                                <li><a href="#!">Men</a></li>
+                                <li><a href="#!">Women</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html" class="desktop-link">Products</a>
+                            <input type="checkbox" id="show-services">
+                            <label for="show-services">Products</label>
+                            <ul>
+                                <li><a href="#">Nike</a></li>
+                                <li><a href="#">Adidas</a></li>
+                                <li><a href="#">Puma</a></li>
+                                <li><a href="#">Vans</a></li>
+                                <li><a href="#">Converse</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="li-second-last">
+                            <div class="show-cart" id="sale-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span id="iconShowTotalItemsInCart" class="badge bg-dark text-white rounded-pill">
+                                    0
+                                </span>
+                            </div>
+                            <div class="sale-cart">
+                                <div class="sale-cart-img">
+                                    <img src="https://bizweb.dktcdn.net/100/347/975/themes/709127/assets/empty_cart.png?1616042164749" alt="" width="100%">
+
+                                </div>
+                                <div class="sale-cart-item">
+                                </div>
+                                <div class="sale-cart-btn btn-group">
+                                    <button type="button" class="btn-secondary"><a href="" class="text-decoration-none text-white">View Cart</a></button>
+                                    <button type="button" class="btn-success"><a href="" class="text-decoration-none text-white">Payment</a></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li-last-child">
+                            <a href="register.html" class="show-account"><i class="fas fa-user"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Type Something to Search..." required>
+                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </nav>
+        </header>
+        <!-- Navigation end -->
+
+
+        <!-- Slider Start -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <div class="image">
+                        <img src="../image/slider_3.png" alt="" width="100%">
+                        <img src="../image/cover-black.png" alt="" class="down1">
+                        <img src="../image/cover-black.png" alt="" class="down2">
+
+                        <div class="image-content">
+                            <h1>01</h1>
+                            <h2>Adidas M75</h2>
+                            <div class="borde"></div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam at vitae enim exercitationem fuga harum voluptas. Reiciendis provident quae, temporibus, repellendus illum adipisci, autem iste fuga atque consectetur praesentium
+                                voluptatum!
+                            </p>
+                            <a href="products.html">See Product</a>
+                        </div>
+                        <img src="../image/cover-black-1.png" alt="" class="up1">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image">
+                        <img src="../image/slider_2.png" alt="" width="100%">
+                        <img src="../image/cover-ori-2.png" alt="" class="down1">
+                        <img src="../image/cover-ori-2.png" alt="" class="down2">
+
+                        <div class="image-content">
+                            <h1>02</h1>
+                            <h2>Nike Air</h2>
+                            <div class="borde"></div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam at vitae enim exercitationem fuga harum voluptas. Reiciendis provident quae, temporibus, repellendus illum adipisci, autem iste fuga atque consectetur praesentium
+                                voluptatum!
+                            </p>
+                            <a href="products.html">See Product</a>
+                        </div>
+                        <img src="../image/cover-ori-1.png" alt="" class="up1">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image">
+                        <img src="../image/slider_5.png" alt="" width="100%">
+                        <img src="../image/cover-ori.png" alt="" class="down1">
+                        <img src="../image/cover-ori.png" alt="" class="down2">
+                        <div class="image-content">
+                            <h1>03</h1>
+                            <h2>Nike Blazer</h2>
+                            <div class="borde"></div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam at vitae enim exercitationem fuga harum voluptas. Reiciendis provident quae, temporibus, repellendus illum adipisci, autem iste fuga atque consectetur praesentium
+                                voluptatum!
+                            </p>
+                            <a href="products.html">See Product</a>
+                        </div>
+                        <img src="../image/cover-ori-1.png" alt="" class="up1">
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="image">
+                        <img src="../image/slider_6.png" alt="" width="100%">
+                        <img src="../image/cover-slider-pink.png" alt="" class="down1">
+                        <img src="../image/cover-slider-pink.png" alt="" class="down2">
+
+                        <div class="image-content">
+                            <h1>04</h1>
+                            <h2>Puma S92</h2>
+                            <div class="borde"></div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam at vitae enim exercitationem fuga harum voluptas. Reiciendis provident quae, temporibus, repellendus illum adipisci, autem iste fuga atque consectetur praesentium
+                                voluptatum!
+                            </p>
+                            <a href="products.html">See Product</a>
+                        </div>
+                        <img src="../image/cover-pink-1.png" alt="" class="up1">
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+
+                <span id="btn-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span id="btn-next">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+                <ul>
+                    <li class="running"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Slider end -->
+
+
+        <!-- Body -->
+        <main class="main container">
+            <!-- Brand start -->
+            <section class="main-brands">
+                <h1>Brand</h1>
+                <div class="brands row row-cols-sm-6 d-flex align-items-center justify-content-between justify-content-sm-start">
+                    <div class="nike col-2 col-sm-2 col-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.1s">
+                        <img src="../image/nike.png" alt="" width="100%">
+                    </div>
+                    <div class="adidas col-2 col-sm-2 col-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.2s">
+                        <img src="../image/adidas.png" alt="" width="100%">
+                    </div>
+                    <div class="puma col-2 col-sm-2 col-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
+                        <img src="../image/puma.png" alt="" width="100%">
+                    </div>
+                    <div class="vans col-2 col-sm-2 col-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+                        <img src="../image/vans.png" alt="" width="100%">
+                    </div>
+                    <div class="converse col-2 col-sm-2 col-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.5s">
+                        <img src="../image/converse.png" alt="" width="100%">
+                    </div>
+                    <div class="new-balance col-2 col-sm-2 col-4 wow animate__animated animate__fadeInRight" data-wow-delay="0.6s">
+                        <img src="../image/new0balance.png" alt="" width="100%">
+                    </div>
+                </div>
+            </section>
+            <!-- Brand end -->
+
+            <!-- Main product -->
+            <section class="main-seller">
+                <!-- Menu product start -->
+                <div class="tabs mb-sm-4 mb-sm-4">
+                    <h2 class="heading wow animate__animated animate__fadeInLeft">BEST SELLER</h2>
+                    <div class="tabs-nav wow animate__animated animate__fadeInRight">
+                        <div class="menu">
+                            <ul>
+                                <li type="all" class="all">All</li>
+                                <li type="tNike" class="nike">Nike</li>
+                                <li type="tAdidas" class="adidas">Adidas</li>
+                                <li type="tPuma" class="puma">Puma</li>
+                                <li type="tVans" class="vans">Vans</li>
+                                <li type="tConverse" class="conver">Converse</li>
+                                <li type="tNewBalan" class="newbalan">New Balance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu product end -->
+                <!-- Product Items start -->
+
+                <div class="best-seller row mt-lg-5 mt-sm-0 mt-2">
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tConverse" data-wow-delay="0.1s">
+                        <div>
+                            <img src="../image/product-1.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike wmns zoom air</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp  all tNike" data-wow-delay="0.2s">
+                        <div>
+                            <img src="../image/product-2.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike air max 2090</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tAdidas" data-wow-delay="0.3s">
+                        <div>
+                            <img src="../image/product-3.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike air vapormax</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tNike" data-wow-delay="0.4s">
+                        <div>
+                            <img src="../image/product-4.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike air max 2090</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tAdidas" data-wow-delay="0.5s">
+                        <div>
+                            <img src="../image/product-4.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike air max 2090</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tNike" data-wow-delay="0.6s">
+                        <div>
+                            <img src="../image/product-4.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike air max 2090</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tAdidas" data-wow-delay="0.7s">
+                        <div>
+                            <img src="../image/product-4.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike air max 2090</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tPuma" data-wow-delay="0.8s">
+                        <div>
+                            <img src="../image/product-5.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike air vapormax</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tVans" data-wow-delay="0.9s">
+                        <div>
+                            <img src="../image/product-3.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike wmns air fire</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tNike" data-wow-delay="1s">
+                        <div>
+                            <img src="../image/product-2.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike air max 2090</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tNewBalan" data-wow-delay="1.1s">
+                        <div>
+                            <img src="../image/detail-shoe5.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike air vapormax</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-sm-4 col-6 wow animate__animated animate__fadeInUp all tPuma" data-wow-delay="1.2s">
+                        <div>
+                            <img src="../image/detail-shoe5.png " alt=" " width="100% ">
+                        </div>
+                        <div class="post d-flex justify-content-between flex-column ">
+                            <h4 class="post-title d-flex justify-content-between align-items-center ">
+                                <span>nike air vapormax</span>
+                                <i class="far fa-heart "></i>
+                            </h4>
+                            <p class="post-price mb-sm-0 ">Pricing: $140.00</p>
+                        </div>
+                        <div class="add-to-card mb-3 ">
+                            <button type="button " class="btn btn-pur py-lg-1 m-sm-0 p-sm-0 p-1 m-0">Add to card</button>
+                            <i class="fas fa-cart-plus "></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Product Items start -->
+
+            <!-- Load more -->
+            <section class="more mb-sm-0 p-1 wow animate__animated animate__fadeInLeft" data-wow-delay="1.2s">
+                <a href="products.html ">LOAD MORE <span><i class="fas fa-angle-double-right "></i></span></a>
+            </section>
+
+            <!-- Video start -->
+            <section class="video row ms-sm-0 ">
+                <h1 class="wow animate__animated animate__fadeInDown">Story</h1>
+                <div class="video-shoe col-sm-12 wow animate__animated animate__fadeInUp">
+                    <video src="../video/shoe.mp4 " autoplay muted loop width="100% "></video>
+                </div>
+            </section>
+            <!-- Video end -->
+            <section class="about-us row">
+                <div class="about-right col-lg-12 col-12 wow animate__animated animate__slideInLeft">
+                    <div class="image-description ">
+                        <img src="../image/des1.png " alt=" " width="100% ">
+                    </div>
+                    <div class="description ">
+                        <h3>EFFORTLESS ELEGANCE</h3>
+                        <p>As comfortable as they are versatile, our handcrafted loafers, drivers and slip-ons are perfectly suited to a moment when both our work and home lives are getting more flexible.</p>
+                        <a class="mt-sm-4 mb-sm-4 " href=" ">Save on cart</a>
+                    </div>
+                </div>
+                <div class="about-left col-lg-12 col-12 wow animate__animated animate__slideInRight">
+                    <div class="image-description ">
+                        <img src="../image/des2.png " alt=" " width="100% ">
+                    </div>
+                    <div class="description ">
+                        <h3>EFFORTLESS ELEGANCE</h3>
+                        <p>As comfortable as they are versatile, our handcrafted loafers, drivers and slip-ons are perfectly suited to a moment when both our work and home lives are getting more flexible.</p>
+                        <a class="mt-sm-4 mb-sm-4 " href=" ">Save on cart</a>
+                    </div>
+                </div>
+                <div class="about-right col-lg-12 col-12 wow animate__animated animate__slideInLeft">
+                    <div class="image-description ">
+                        <img src="../image/des3.png " alt=" " width="100% ">
+                    </div>
+                    <div class="description ">
+                        <h3>EFFORTLESS ELEGANCE</h3>
+                        <p>As comfortable as they are versatile, our handcrafted loafers, drivers and slip-ons are perfectly suited to a moment when both our work and home lives are getting more flexible.</p>
+                        <a class="mt-sm-4 mb-sm-4 " href=" ">Save on cart</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row wow animate__animated animate__zoomInUp">
+                <div class="why-choose-us col-12 col-sm-12 text-center">The reason why you choose us!!!</div>
+            </section>
+            <section class="why-us row d-flex justify-content-between align-items-center flex-row ">
+                <div class="method col-3 wow animate__animated animate__slideInLeft">
+                    <div class="method-up ">
+                        <h1>Advantages</h1>
+                        <div class="img ">
+                            <img src="../image/quality3.png " alt=" " width="100% ">
+                        </div>
+                    </div>
+                    <div class="method-down ">
+                        <h2>02</h2>
+                        <h2>Sneaker Shoes</h2>
+                        <p>
+                            We deliver immersive virtual reality experiences that encourages learning, creativity and play at transport hubs, select retail and culturally significant venues.
+                        </p>
+                        <br>
+                        <p>
+                            We deliver immersive virtual reality experiences that encourages learning, creativity and play at transport hubs, select retail and culturally significant venues.
+                        </p>
+                        <br>
+
+                    </div>
+                </div>
+                <div class="method col-3 wow animate__animated animate__slideInUp">
+                    <div class="method-down ">
+                        <h3>01</h3>
+                        <h2>Quality Assurance</h2>
+                        <p>
+                            We deliver immersive virtual reality experiences that encourages learning, creativity and play at transport hubs, select retail and culturally significant venues.
+                        </p>
+                    </div>
+                    <div class="method-image mt-sm-1 ">
+                        <img src="../image/quality1.png " alt=" " width="100% ">
+                    </div>
+                </div>
+                <div class="method col-3 wow animate__animated animate__slideInRight">
+                    <div class="method-down ">
+                        <h1>03</h1>
+                        <h2>Free Shipping</h2>
+                        <div class="method-down-img ">
+                            <img src="../image/quality4.png " alt=" " width="100% ">
+                        </div>
+                    </div>
+                    <div class="method-down ">
+                        <h3>04</h3>
+                        <h2>Gift Certificates</h2>
+                        <p>
+                            We deliver immersive virtual reality experiences that encourages learning, creativity and play at transport hubs, select retail and culturally significant venues.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <section class="banner wow animate__animated animate__zoomInDown">
+            <div class="banner-image ">
+                <img src="../image/banner.png " alt=" " width="100% ">
+            </div>
+            <div class="banner-order ">
+                <a href="#! ">
+                    ORDER NOW
+                </a>
+            </div>
+        </section>
+
+        <section class="customer " id="reviews ">
+            <h1 class="d-block text-center align-items-center ">Customer Reviews</h1>
+            <div class="image-slider ">
+                <div class="image-item wow animate__animated animate__slideInUp" data-wow-delay="0.1s">
+                    <div class="image1 ">
+                        <div class="customer-avatar ">
+                            <img src="https://cuongphim.com/wp-content/uploads/2019/05/Elizabeth-Olsen-cuong-phim-9.jpg " alt=" " width="100% ">
+                        </div>
+                        <div class="customer-name ">
+                            <span>Elizabeth Olsen</span>
+                        </div>
+                        <div class="customer-comment ">
+                            <p>But I must explain to you how of this mistaken idea of denouncing of a pleasure and praining pain was born and i will give you a complete account of the system and expound the actual teachings of the great expiorer of the truth
+                                the master-buider of human.</p>
+                        </div>
+                    </div>
+                    <div class="image-title ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                        <i class="far fa-star "></i>
+                    </div>
+                </div>
+                <div class="image-item wow animate__animated animate__slideInUp" data-wow-delay="0.2s">
+                    <div class="image1 ">
+                        <div class="customer-avatar ">
+                            <img src="https://images.indianexpress.com/2021/08/spider-man-no-way-home-1200.jpg" alt=" " width="100% ">
+                        </div>
+                        <div class="customer-name ">
+                            <span>Spider Man</span>
+                        </div>
+                        <div class="customer-comment ">
+                            <p>But I must explain to you how of this mistaken idea of denouncing of a pleasure and praining pain was born and i will give you a complete account of the system and expound the actual teachings of the great expiorer of the truth
+                                the master-buider of human.</p>
+                        </div>
+                    </div>
+                    <div class="image-title ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                        <i class="far fa-star "></i>
+                    </div>
+                </div>
+                <div class="image-item wow animate__animated animate__slideInUp" data-wow-delay="0.3s">
+                    <div class="image1 ">
+                        <div class="customer-avatar ">
+                            <img src="https://vnn-imgs-a1.vgcloud.vn/znews-photo-fbcrawler.zadn.vn/w960/Uploaded/mdf_nemrxw/2020_09_19/Chris_Hemsworth_discusses_his_new_movie_Extraction_on_Instagram_Live_-600x400.jpg" alt=" " width="100% ">
+                        </div>
+                        <div class="customer-name ">
+                            <span>Thor</span>
+                        </div>
+                        <div class="customer-comment ">
+                            <p>But I must explain to you how of this mistaken idea of denouncing of a pleasure and praining pain was born and i will give you a complete account of the system and expound the actual teachings of the great expiorer of the truth
+                                the master-buider of human.</p>
+                        </div>
+                    </div>
+                    <div class="image-title ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                        <i class="far fa-star "></i>
+                    </div>
+                </div>
+                <div class="image-item wow animate__animated animate__slideInUp" data-wow-delay="0.4s">
+                    <div class="image1 ">
+                        <div class="customer-avatar ">
+                            <img src="https://media.vov.vn/sites/default/files/styles/large/public/2021-01/d5_khyjueaavq7h_1.jpg" alt=" " width="100% ">
+                        </div>
+                        <div class="customer-name ">
+                            <span>Captain American</span>
+                        </div>
+                        <div class="customer-comment ">
+                            <p>But I must explain to you how of this mistaken idea of denouncing of a pleasure and praining pain was born and i will give you a complete account of the system and expound the actual teachings of the great expiorer of the truth
+                                the master-buider of human.</p>
+                        </div>
+                    </div>
+                    <div class="image-title ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                        <i class="far fa-star "></i>
+                    </div>
+                </div>
+                <div class="image-item wow animate__animated animate__slideInUp" data-wow-delay="0.5s">
+                    <div class="image1 ">
+                        <div class="customer-avatar ">
+                            <img src="https://vtv1.mediacdn.vn/thumb_w/650/2020/5/22/m1-1590116365956755937924.jpg" alt=" " width="100% ">
+                        </div>
+                        <div class="customer-name ">
+                            <span>Black Window</span>
+                        </div>
+                        <div class="customer-comment ">
+                            <p>But I must explain to you how of this mistaken idea of denouncing of a pleasure and praining pain was born and i will give you a complete account of the system and expound the actual teachings of the great expiorer of the truth
+                                the master-buider of human.</p>
+                        </div>
+                    </div>
+                    <div class="image-title ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half-alt "></i>
+                        <i class="far fa-star "></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <section class="footer container">
+                <div class="row d-lg-flex justify-content-lg-between align-items-lg-start">
+                    <div class="information col-lg-4 col-md-4 col-sm-4">
+                        <h2>Introduction</h2>
+                        <p>
+                            Welcome to the DesStore home here, every word, every detail and every image is evidence of DesStore's history, and is constantly growing.
+                        </p>
+                    </div>
+                    <div class="address col-lg-4 col-md-4 col-sm-4">
+                        <h2>Address</h2>
+                        <a href="# ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>21 W. 46th St., New York, United States</span>
+                        </a>
+                        <a href="# ">
+                            <i class="fas fa-phone"></i>
+                            <span>0982211485</span>
+                        </a>
+                        <a href="# ">
+                            <i class="fas fa-envelope-open-text "></i>
+                            <span>ngocdinh2k1@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="social-networking col-lg-4 col-md-4 col-sm-4">
+                        <h2>Social Networking</h2>
+                        <div class="social-icons">
+                            <a href=" " style="color: #3d55d9 "><i class="fab fa-facebook "></i></a>
+                            <a href=" " style="color: #ff626d "><i class="fab fa-instagram "></i></a>
+                            <a href=" " style="color: rgb(120, 122, 245) "><i class="fab fa-facebook-messenger "></i></a>
+                            <a href=" " style="color: #38a1d9 "><i class="fab fa-skype "></i></a>
+                            <a href=" " style="color: #6bb731 "><i class="fab fa-twitter "></i></a>
+                            <a href=" " style="color: #2f2f31 "><i class="fab fa-github "></i></a>
+                        </div>
+                        <div class="social-subcribe">
+                            <div class="social-subcribe-send">
+                                <input type="email" name="subcribe" id="subcribe" placeholder="Your email" />
+                                <i id="send-subcribe" class="fas fa-paper-plane"></i>
+                            </div>
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="foot-register container">
+                <div class="foot-register-payment">
+                    <a href=" "><img src="../image/footer-1.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-2.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-3.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-4.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-5.png " alt=" "></a>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- <div class="upTo">
+        <i class="fas fa-chevron-circle-down"></i>
+    </div> -->
+    <script src="../asses/js/jquery.min.js "></script>
+    <!-- <script type="text/javascript " src="https://code.jquery.com/jquery-migrate-1.2.1.min.js "></script> -->
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="../asses/js/popper.min.js "></script>
+    <script src="../asses/lib/bootstrap/js/bootstrap.min.js "></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="../asses/js/scroll.js"></script>
+    <script src="../asses/js/wow.js"></script>
+    <script src="../asses/js/main-resive.js "></script>
+    <script src="../asses/js/main.js "></script>
+
+</body>
+
+</html>

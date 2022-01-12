@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="../asses/css/cart.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content-1">
+                    <div class="logo">
+                        <a href="home.html"><img src="../image/logo.png" alt=""></a>
+                    </div>
+                    <ul class="links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="#" class="desktop-link">Features</a>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Features</label>
+                            <ul class="gentle">
+                                <li><a href="#!">Men</a></li>
+                                <li><a href="#!">Women</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html" class="desktop-link">Products</a>
+                            <input type="checkbox" id="show-services">
+                            <label for="show-services">Products</label>
+                            <ul>
+                                <li><a href="#">Nike</a></li>
+                                <li><a href="#">Adidas</a></li>
+                                <li><a href="#">Puma</a></li>
+                                <li><a href="#">Vans</a></li>
+                                <li><a href="#">Converse</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="li-second-last"><a href="#!" class="show-cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li class="li-last-child"><a href="register.html" class="show-account"><i class="fas fa-user"></i></a></li>
+
+                    </ul>
+                </div>
+                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Type Something to Search..." required>
+                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </nav>
+        </header>
+        <section class="make-payment">
+            <div class="make-payment-img">
+                <img src="../image/cart.png" alt="" width="100%">
+            </div>
+            <!-- <div class="fake-opacity"></div> -->
+
+            <!-- Step 1 -->
+
+            <!-- <div class="make-payment-1 make-call">
+                <div class="payment-heading">
+                    <div class="undo-close">
+                        <p class="undo"><i class="fas fa-arrow-left"></i></p>
+                        <p class="close"><i class="fas fa-times"></i></p>
+                    </div>
+                    <div class="heading">
+                        Make Payment
+                    </div>
+                </div>
+                <div class="payment-steps">
+                    <ul>
+                        <li class="done">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <div class="payment-form">
+                    <div class="form-group1">
+                        <div class="form">
+                            <input type="text" id="firstName" name="firstName" class="form-input" placeholder=" ">
+                            <label for="name" class="form-label">First Name</label>
+                        </div>
+                        <div class="form">
+                            <input type="email" id="email" name="email" class="form-input" placeholder=" ">
+                            <label for="name" class="form-label">Email Address</label>
+                        </div>
+                        <div class="select-method">
+                            <div class="card-debit">
+                                <span><i class="fas fa-credit-card"></i></span>
+                                <label for="bank">Credit Card or Debit</label>
+                                <input type="checkbox" id="check">
+                            </div>
+                            <div class="paypal">
+                                <span><i class="fab fa-paypal"></i></span>
+                                <label for="paypal">Paypal</label>
+                                <input type="checkbox" id="check">
+                            </div>
+                            <div class="bank-transfor">
+                                <span><i class="fas fa-university"></i></span>
+                                <label for="">Bank Transfor</label>
+                                <input type="checkbox" id="check">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group2">
+                        <div class="form">
+                            <input type="text" name="lastName" id="lastName" class="form-input" placeholder=" ">
+                            <label for="name" class="form-label">Last Name</label>
+                        </div>
+                        <div class="form">
+                            <input type="text" name="address" id="address" class="form-input" placeholder=" ">
+                            <label for="name" class="form-label">Address for Delivery</label>
+                        </div>
+                        <div class="text-area">
+                            <textarea name="message" id="message" cols="40" rows="9" placeholder=" "></textarea>
+                            <label for="name" class="form-label">Message</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-next">
+                    <button type="button">Go to Payment</button>
+                </div>
+            </div> -->
+
+            <!-- Step2 -->
+
+
+            <!-- <div class="make-payment-2 make-call">
+                <div class="payment-heading">
+                    <div class="undo-close">
+                        <p class="undo"><i class="fas fa-arrow-left"></i></p>
+                        <p class="close"><i class="fas fa-times"></i></p>
+                    </div>
+                    <div class="heading">
+                        Make Payment
+                    </div>
+                </div>
+                <div class="payment-steps">
+                    <ul>
+                        <li class="done">1</li>
+                        <li class="done">2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <div class="payment-form">
+                    <div class="form-group1">
+                        <img src="../image/visa.png" alt="" width="100%">
+                    </div>
+
+                    <div class="form-group2">
+                        <div class="form">
+                            <input type="text" id="" class="form-input" placeholder=" ">
+                            <label for="name" class="form-label">Card Number</label>
+                        </div>
+                        <div class="form-flex">
+                            <div class="form">
+                                <input type="text" class="form-input" placeholder=" ">
+                                <label for="name" class="form-label">Expiry</label>
+                            </div>
+                            <div class="form">
+                                <input type="text" class="form-input" placeholder=" ">
+                                <label for="name" class="form-label">CVV</label>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <input type="text" class="form-input" placeholder=" ">
+                            <label for="name" class="form-label">Holder Number</label>
+                        </div>
+                        <div class="save-card">
+                            <label for="creadit">Save this credit card</label>
+                            <input type="checkbox" id="check">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-next">
+                    <button type="button">Confirm</button>
+                </div>
+            </div> -->
+
+            <!-- Step 3 -->
+
+            <!-- <div class="make-payment-3 make-call">
+                <div class="payment-heading">
+                    <div class="undo-close">
+                        <p class="undo"><i class="fas fa-arrow-left"></i></p>
+                        <p class="close"><i class="fas fa-times"></i></p>
+                    </div>
+                    <div class="heading">
+                        Make Payment
+                    </div>
+                </div>
+                <div class="payment-steps">
+                    <ul>
+                        <li class="done">1</li>
+                        <li class="done">2</li>
+                        <li class="done">3</li>
+                    </ul>
+                </div>
+                <div class="payment-success">
+
+                    <p><i class="fas fa-check-circle"></i></p>
+
+                    <h1>Success</h1>
+                </div>
+
+                <div class="payment-next">
+                    <button type="button">Complete</button>
+                </div>
+            </div> -->
+
+
+
+        </section>
+        <main class="container m-lg-auto">
+            <div class="heading">
+                <h5>
+                    <p>Home</p>
+                    <p><i class="fas fa-caret-right"></i></p>
+                    <p class="check">Your Cart</p>
+                </h5>
+            </div>
+            <section class="cart">
+                <h1>Shopping Cart</h1>
+                <div class="cart-products">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Product</td>
+                                <td>Color</td>
+                                <td>Price</td>
+                                <td>Quantity</td>
+                                <td>Total</td>
+                                <td>Delete</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="item">
+                                <td class="cart-products-img">
+                                    <div class="image">
+                                        <img src="../image/detail-shoe8.png" alt="" width="100%">
+
+                                    </div>
+                                    <div class="title">
+                                        <p>NIKE AIR VAPORMAX</p>
+                                    </div>
+                                </td>
+                                <td class="cart-products-color">
+                                    <p>White</p>
+                                </td>
+                                <td class="cart-products-price">
+                                    $<span class="price" id="price">499.00</span>
+                                </td>
+                                <td class="cart-products-qty">
+                                    <button class="btn-cart btn-up" data-type="up"><i class="fas fa-plus"></i></button>
+                                    <span class="quantity" id="quantity">1</span>
+                                    <button class="btn-cart btn-down" data-type="down"><i class="fas fa-minus"></i></button>
+                                </td>
+                                <td class="cart-products-total">
+                                    $<span class="total" id="total">499.00</span>
+                                    <input type="hidden" class="totalPrice" value="499" name="totalPrice">
+                                </td>
+                                <td class="cart-products-delete" id="delete">
+                                    <span><i class="fas fa-trash-alt"></i></span>
+                                </td>
+                            </tr>
+                            <tr class="item">
+                                <td class="cart-products-img">
+                                    <div class="image">
+                                        <img src="../image/detail-shoe8.png" alt="" width="100%">
+
+                                    </div>
+                                    <div class="title">
+                                        <p>NIKE AIR VAPORMAX</p>
+                                    </div>
+                                </td>
+                                <td class="cart-products-color">
+                                    <p>White</p>
+                                </td>
+                                <td class="cart-products-price">
+                                    $<span class="price" id="price">499.00</span>
+                                </td>
+                                <td class="cart-products-qty">
+                                    <button class="btn-cart btn-up" data-type="up"><i class="fas fa-plus"></i></button>
+                                    <span class="quantity" id="quantity">1</span>
+                                    <button class="btn-cart btn-down" data-type="down"><i class="fas fa-minus"></i></button>
+                                </td>
+                                <td class="cart-products-total">
+                                    $<span class="total" id="total">499.00</span>
+                                    <input type="hidden" class="totalPrice" value="499" name="totalPrice">
+                                </td>
+                                <td class="cart-products-delete" id="delete">
+                                    <span><i class="fas fa-trash-alt"></i></span>
+                                </td>
+                            </tr>
+                            <tr class="item">
+                                <td class="cart-products-img">
+                                    <div class="image">
+                                        <img src="../image/detail-shoe8.png" alt="" width="100%">
+
+                                    </div>
+                                    <div class="title">
+                                        <p>NIKE AIR VAPORMAX</p>
+                                    </div>
+                                </td>
+                                <td class="cart-products-color">
+                                    <p>White</p>
+                                </td>
+                                <td class="cart-products-price">
+                                    $<span class="price" id="price">499.00</span>
+                                </td>
+                                <td class="cart-products-qty">
+                                    <button class="btn-cart btn-up" data-type="up"><i class="fas fa-plus"></i></button>
+                                    <span class="quantity" id="quantity">1</span>
+                                    <button class="btn-cart btn-down" data-type="down"><i class="fas fa-minus"></i></button>
+                                </td>
+                                <td class="cart-products-total">
+                                    $<span class="total" id="total">499.00</span>
+                                    <input type="hidden" class="totalPrice" value="499" name="totalPrice">
+                                </td>
+                                <td class="cart-products-delete" id="delete">
+                                    <span><i class="fas fa-trash-alt"></i></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="payment">
+                <div class="coupon-voucher">
+                    <input type="text" name="voucher" id="voucher" placeholder="Voucher code">
+                    <button type="button">Search</button>
+                </div>
+                <div class="coupon-subtotal">
+                    <div class="fee">
+                        <p>
+                            <span>Subtotal</span>
+                            <span style="display: flex;">$<span class="subtotal"> 1497.00</span></span>
+                        </p>
+                        <p>
+                            <span>Shipping fee</span>
+                            <span style="display: flex;">$<span class="shipping-fee">20.00</span></span>
+                        </p>
+                        <p>
+                            <span>Coupon</span>
+                            <span class="coupon">0</span>
+                        </p>
+                    </div>
+                    <div class="total-final">
+                        <p>TOTAL</p>
+                        <p>$<span id="total-final">1,517.00</span></p>
+                    </div>
+                    <div class="check-out">
+                        <button for="">Check out</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <section class="footer container">
+                <div class="row d-lg-flex justify-content-lg-between align-items-lg-start">
+                    <div class="information col-lg-4 col-md-4 col-sm-4">
+                        <h2>Introduction</h2>
+                        <p>
+                            Welcome to the DesStore home here, every word, every detail and every image is evidence of DesStore's history, and is constantly growing.
+                        </p>
+                    </div>
+                    <div class="address col-lg-4 col-md-4 col-sm-4">
+                        <h2>Address</h2>
+                        <a href="# ">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>21 W. 46th St., New York, United States</span>
+                        </a>
+                        <a href="# ">
+                            <i class="fas fa-phone"></i>
+                            <span>0982211485</span>
+                        </a>
+                        <a href="# ">
+                            <i class="fas fa-envelope-open-text "></i>
+                            <span>ngocdinh2k1@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="social-networking col-lg-4 col-md-4 col-sm-4">
+                        <h2>Social Networking</h2>
+                        <div class="social-icons ">
+                            <a href=" " style="color: #3d55d9 "><i class="fab fa-facebook "></i></a>
+                            <a href=" " style="color: #ff626d "><i class="fab fa-instagram "></i></a>
+                            <a href=" " style="color: rgb(120, 122, 245) "><i class="fab fa-facebook-messenger "></i></a>
+                            <a href=" " style="color: #38a1d9 "><i class="fab fa-skype "></i></a>
+                            <a href=" " style="color: #6bb731 "><i class="fab fa-twitter "></i></a>
+                            <a href=" " style="color: #2f2f31 "><i class="fab fa-github "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="foot-register container">
+                <div class="foot-register-payment">
+                    <a href=" "><img src="../image/footer-1.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-2.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-3.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-4.png " alt=" "></a>
+                    <a href=" "><img src="../image/footer-5.png " alt=" "></a>
+
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="../asses/js/jquery.min.js"></script>
+    <script src="../asses/js/wow.js"></script>
+    <script src="../asses/js/scroll.js"></script>
+    <script src="../asses/js/cart.js"></script>
+</body>
+
+</html>

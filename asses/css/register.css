@@ -1,0 +1,396 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fruktur&display=swap);
+html {
+  overflow-x: hidden;
+}
+
+ul {
+  float: left;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes upDown {
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    color: #ff626d;
+  }
+  100% {
+    color: #333235;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes upDown {
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    color: #ff626d;
+  }
+  100% {
+    color: #333235;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.btn {
+  padding: 16px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  color: #fff;
+  font-size: 16px;
+  background-color: #5d5dff;
+}
+
+.btn-info {
+  color: #fff;
+  font-size: 16px;
+  background-color: lightgreen;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333235;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#ff626d));
+  background: linear-gradient(transparent, #ff626d);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+section.active {
+  background-color: #6f5733;
+}
+
+section .container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background: #fff;
+  -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+section .container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .container .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+section .container .user .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section .container .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .container .user .formBx h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+section .container .user .formBx input {
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+  margin: 6px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+section .container .user .formBx button {
+  background: #677eff;
+  border-radius: 4px;
+  color: #fff;
+  display: inline;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  cursor: pointer;
+  border: 0;
+}
+
+section .container .user .formBx .signup {
+  position: relative;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+section .container .user .formBx .signup span {
+  font-weight: 600;
+  color: #577ef5;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+section .container .user.signupBx {
+  pointer-events: none;
+}
+
+section .container .user.signupBx .formBx {
+  top: 100%;
+}
+
+section .container .user.signupBx .formBx .form-group {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+section .container .user.signupBx .formBx .form-group label {
+  display: inline-block;
+}
+
+section .container .user.signupBx .formBx .form-group input {
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  border: 2px solid transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+  margin: 8px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+section .container .user.signupBx .formBx .form-group input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+section .container .user.signupBx .formBx .form-group.success input {
+  border-color: #2ecc71;
+}
+
+section .container .user.signupBx .formBx .form-group.error input {
+  border-color: #e74c3c;
+}
+
+section .container .user.signupBx .formBx .form-group i {
+  visibility: hidden;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+}
+
+section .container .user.signupBx .formBx .form-group.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+section .container .user.signupBx .formBx .form-group.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+section .container .user.signupBx .formBx .form-group small {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  visibility: hidden;
+}
+
+section .container .user.signupBx .formBx .form-group.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+section .container .user.signupBx .formBx button[type="button"] {
+  background: #ff626d;
+  border-radius: 4px;
+  color: #fff;
+  display: inline;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  cursor: pointer;
+  border: 0;
+}
+
+section .container .user.signupBx .imgBx {
+  top: -100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .container .user.signinBx .formBx {
+  top: 0;
+}
+
+section .container .user.signinBx .imgBx {
+  top: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .container.active .signupBx {
+  pointer-events: initial;
+}
+
+section .container.active .signupBx .formBx {
+  top: 0;
+}
+
+section .container.active .signupBx .imgBx {
+  top: 0;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+section .container.active .signinBx .formBx {
+  top: 100%;
+}
+
+section .container.active .signinBx .imgBx {
+  top: -100%;
+}
+
+section .home {
+  position: absolute;
+  bottom: 30px;
+  left: 44%;
+  background-color: #6f5733;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+section .home a {
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #808080;
+}
+
+section .home.active {
+  background-color: #808080;
+}
+
+section .home.active a {
+  color: #6f5733;
+}
+
+@media (max-width: 991px) {
+  section .container {
+    max-width: 400px;
+  }
+  section .container .imgBx {
+    display: none;
+  }
+  section .container .user {
+    width: 100%;
+  }
+  section .container.active .signinBx .formBx {
+    top: -100%;
+  }
+}
+/*# sourceMappingURL=register.css.map */

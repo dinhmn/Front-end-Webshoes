@@ -1,0 +1,213 @@
+@import 'color';
+.main {
+    margin: 45px auto;
+    &-brands {
+        margin: 50px auto;
+        h1 {
+            color: $bg-right;
+            font-weight: bold;
+            padding: 20px 0;
+            font-family: 'Fruktur', cursive;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .brands {
+            height: 100px;
+            div {
+                text-align: center;
+                img {
+                    width: 70%;
+                    height: 70%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    &-seller {
+        .tabs {
+            .heading {
+                color: $bg-right;
+                font-weight: bold;
+                padding: 20px 0;
+                font-family: 'Fruktur', cursive;
+                font-size: 50px;
+                font-weight: bold;
+            }
+            &-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .menu {
+                    ul {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        position: relative;
+                        padding-left: 10px;
+                        li {
+                            text-decoration: none;
+                            color: $button;
+                            font-size: 20px;
+                            font-weight: bold;
+                            padding: 5px 0;
+                            display: inline-block;
+                            text-align: center;
+                            width: 100px;
+                            height: 100%;
+                            border-bottom: 3px solid transparent;
+                            cursor: pointer;
+                        }
+                        li:first-child {
+                            width: 50px;
+                            left: 0;
+                            border-bottom: 3px solid $bg-right;
+                        }
+                        li:nth-child(2) {
+                            width: 100px;
+                            left: 50px;
+                        }
+                        li:nth-child(3) {
+                            width: 100px;
+                            left: 150px;
+                        }
+                        li:nth-child(4) {
+                            width: 100px;
+                            left: 250px;
+                        }
+                        li:nth-child(5) {
+                            width: 100px;
+                            left: 350px;
+                        }
+                        li:nth-child(6) {
+                            width: 100px;
+                            left: 450px;
+                        }
+                        li:nth-child(7) {
+                            width: 150px;
+                            left: 550px;
+                        }
+                    }
+                    .nav-phone {
+                        display: none !important;
+                    }
+                    .animate {
+                        // position: absolute;
+                        // bottom: 0;
+                        // padding: 0;
+                        // height: 3px;
+                        // background-color: red;
+                        // transition: all .5s ease 0s;
+                    }
+                }
+            }
+        }
+    }
+    .best-seller {
+        .item {
+            cursor: pointer;
+            div:first-child {
+                img {
+                    height: 180px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            .post {
+                font-weight: 300;
+                padding: 15px 0;
+                flex: 1;
+                h4 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: 5px;
+                }
+                &-title {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                    color: $button;
+                    text-transform: uppercase;
+                }
+                &-price {
+                    color: $button;
+                    font-size: 16px;
+                }
+            }
+            .add-to-card {
+                background-color: transparent;
+                font-size: 20px;
+                font-weight: 500;
+                color: $button;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                border: 5px;
+                transition: .5s;
+                border: 2px solid #6a5af9;
+                &:hover {
+                    box-shadow: rgb(106, 90, 249) 0px 5px 15px;
+                    background-color: #6a5af9;
+                    button {
+                        color: $text;
+                    }
+                    i {
+                        color: $text;
+                    }
+                }
+                i {
+                    font-size: 22px;
+                }
+                button {
+                    font-size: 20px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.more {
+    width: fit-content;
+    margin: 80px auto;
+    a {
+        display: block;
+        text-decoration: none;
+        color: $button;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        background-color: transparent;
+        border: 2px solid #6a5af9;
+        padding: 17px 60px;
+        border-radius: 50px;
+        transition: .5s;
+        &:hover {
+            box-shadow: rgb(106, 90, 249) 0px 5px 15px;
+            background-color: #6a5af9;
+            color: $text;
+        }
+    }
+}
+
+.video {
+    h1 {
+        margin: 0 auto;
+        padding: 20px;
+        padding-bottom: 40px;
+        font-family: 'Fruktur', cursive;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+    margin: 30px auto;
+    padding: 20px 0;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
